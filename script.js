@@ -13,7 +13,7 @@ app.use(express.urlencoded())
 app.get("/", (req, res)=>{
     const __filename = fileURLToPath(import.meta.url);
     const __dirname = path.dirname(__filename);
-    res.sendFile(__dirname + "\\index.html")
+    res.sendFile(__dirname + "//index.html")
 })
 
 app.post("/longToShortURL", express.json(),(req,res)=>{
